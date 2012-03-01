@@ -1,37 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="grimbo.android.demo.slidingmenu"
-    android:versionCode="1" android:versionName="1.0">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="grimbo.android.demo.slidingmenu"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
     <uses-sdk android:minSdkVersion="8" />
 
-    <application android:icon="@drawable/ic_launcher" android:label="@string/app_name">
-        <activity android:name=".TestSlideActivity" android:label="TestSlideActivity">
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" >
+        <activity
+            android:name=".TestSlideActivity"
+            android:label="TestSlideActivity" >
         </activity>
-
-        <activity android:name=".PushLeftPushRightAnimation" android:label="PushLeftPushRightAnimation">
+        <activity
+            android:name=".PushLeftPushRightAnimation"
+            android:label="PushLeftPushRightAnimation" >
         </activity>
 
         <!-- Menu slides over the app, starting offscreen to the left -->
-        <activity android:name=".AnimationStackedFrames" android:label="AnimationStackedFrames">
+        <activity
+            android:name=".AnimationStackedFrames"
+            android:label="AnimationStackedFrames" >
         </activity>
 
         <!-- App slides right to reveal menu underneath -->
-        <activity android:name=".SlideAnimationThenCallLayout" android:label="SlideAnimationThenCallLayout">
+        <activity
+            android:name=".SlideAnimationThenCallLayout"
+            android:label="SlideAnimationThenCallLayout" >
         </activity>
 
         <!-- App slides right to reveal menu underneath -->
-        <activity android:name=".HorzScrollWithListMenu" android:label="HorzScrollWithListMenu">
+        <activity
+            android:name=".HorzScrollWithListMenu"
+            android:label="HorzScrollWithListMenu" >
         </activity>
 
-        <!-- -->
-        <activity android:name=".HorzScrollWithImageMenu" android:label="HorzScrollWithImageMenu">
+        <!--  -->
+        <activity
+            android:name=".HorzScrollWithImageMenu"
+            android:label="HorzScrollWithImageMenu" >
+        </activity>
+        <activity
+            android:name=".HorzScrollWithActivityMenu"
+            android:label="HorzScrollWithActivityMenu" >
+        </activity>
+        <activity
+            android:name=".NewActivity1"
+            android:label="NewActivity1" >
+        </activity>
+        <activity
+            android:name=".NewActivity2"
+            android:label="NewActivity2" >
+        </activity>
+        <activity
+            android:name=".NewActivity3"
+            android:label="NewActivity3" >
         </activity>
 
         <!-- Menu -->
-        <activity android:name=".MenuActivity" android:label="MenuActivity">
+        <activity
+            android:name=".MenuActivity"
+            android:label="MenuActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
     </application>
+
 </manifest>
